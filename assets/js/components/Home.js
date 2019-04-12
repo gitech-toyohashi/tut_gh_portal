@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import sampleAction from '../actions/sample_action'
 
 const mapStateToProps = (state) => ({
+  ...state.routeReducer,
   ...state.sampleReducer
 })
 
