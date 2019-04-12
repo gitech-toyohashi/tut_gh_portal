@@ -1,9 +1,25 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
-const Home = () => (
-  <div>
-    Hello World!
-  </div>
-)
+import sampleAction from '../actions/sample_action'
 
-export default Home
+const mapStateToProps = (state) => ({
+  ...state.sampleReducer
+})
+
+class Home extends Component {
+  constructor(props, context) {
+    super(props, context)
+    this.props.dispatch(sampleAction.test("This is payload"))
+  }
+
+  render() {
+    return (
+      <div>
+        Hello World!
+      </div>
+    )
+  }
+}
+
+export default connect(mapStateToProps)(Home)
