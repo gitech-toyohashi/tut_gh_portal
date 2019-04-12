@@ -71,5 +71,5 @@ config :tut_gh_portal, TutGhPortal.Repo,
   username: "postgres",
   password: "postgres",
   database: "tut_gh_portal_dev",
-  hostname: "localhost",
+  hostname: "db",
   pool_size: 10
