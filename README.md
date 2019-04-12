@@ -12,7 +12,7 @@ And run following commands with `docker-compose run web <commands>`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-You can enter running container with `docker exec -it tubeam_web_1 bash`
+You can enter running container with `docker exec -it tut_gh_portal_web_1 bash`
 
 If you stop Docker services
   * Stop with `docker-compose stop`
