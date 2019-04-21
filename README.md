@@ -4,6 +4,10 @@ To start your Phoenix server:
 
   * Run services with `docker-compose up -d`
 
+## If you don't have `Docker` installed yet, you need to install `Docker` first.
+## Download `Docker` for Mac or Window via this [link](https://www.docker.com/get-started)
+## You need to Sign Up first if you don't have Docker account yet. 
+
 And run following commands with `docker-compose run web <commands>`
 
   * Install dependencies with `mix deps.get`
