@@ -1,18 +1,20 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import Layout from './Layout';
+import Header from './Header';
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   ...state.routeReducer
-})
+});
 
 class Home extends Component {
   render() {
     return (
-      <div>
-        Hello World!
-      </div>
-    )
+      <Layout>
+        <Header />
+      </Layout>
+    );
   }
 }
 
-export default connect(mapStateToProps)(Home)
+export default connect(mapStateToProps)(Home);
