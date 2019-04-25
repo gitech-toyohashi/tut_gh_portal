@@ -10,7 +10,7 @@ const StNav = styled.nav`
   justify-content: space-between;
 `;
 
-const ActionButton = styled.button`
+export const ActionButton = styled.button`
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
   background: #ff1a70;
   border-radius: 30px;
@@ -33,7 +33,7 @@ const ActionButton = styled.button`
     background: #df1a70;
   }
   :focus {
-    border: 1px solid teal;
+    /* border: 1px solid teal; */
   }
 `;
 
