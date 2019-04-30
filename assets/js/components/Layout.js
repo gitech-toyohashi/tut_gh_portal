@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StLayout = styled.div`
-  height: 100%;
+  height: 100vh;
   max-width: 834px;
   margin: 0 auto;
   padding: 0 20px;

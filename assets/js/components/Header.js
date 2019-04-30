@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { ActionButton } from '../shareComponents';
 
 const StHeader = styled.div`
   padding: 20px 0px 20px 0px;
@@ -8,33 +9,6 @@ const StHeader = styled.div`
 const StNav = styled.nav`
   display: flex;
   justify-content: space-between;
-`;
-
-export const ActionButton = styled.button`
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
-  background: #ff1a70;
-  border-radius: 30px;
-  padding: 0px 20px;
-  margin: 0;
-  border: 0;
-  color: #fefefe;
-  font-family: 'Roboto Mono', monospace;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: normal;
-  text-transform: none;
-  text-align: center;
-  :hover,
-  :focus {
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
-    transform: translateY(2px);
-    transition: all 0.3s;
-    background: #df1a70;
-  }
-  :focus {
-    /* border: 1px solid teal; */
-  }
 `;
 
 function Header({ children }) {

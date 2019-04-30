@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { ActionButton } from './Header';
 import {
   StTitle,
   StWrapper,
@@ -7,12 +8,11 @@ import {
   StInputWrapper,
   StLabel,
   StTextBtn,
-  StSmInfo,
-  ActionButton
+  StSmInfo
 } from '../shareComponents';
 function SignUp({ ...props }) {
   return (
-    <StSignUp {...props}>
+    <StSignIn {...props}>
       <StTitle>Global House’s Assembly Room Reservation</StTitle>
       <StWrapper>
         <StInputWrapper>
@@ -25,15 +25,15 @@ function SignUp({ ...props }) {
         </StInputWrapper>
       </StWrapper>
       <ActionButton style={{ padding: '8px 0px', marginBottom: '20px' }}>
-        Sign Up
+        Sign in
       </ActionButton>
       <StSmInfo>
-        Already have an account? <StTextBtn>Sign In</StTextBtn>{' '}
+        Haven’t registered yet?<StTextBtn>Sign Up</StTextBtn>{' '}
       </StSmInfo>
-    </StSignUp>
+    </StSignIn>
   );
 }
-const StSignUp = styled.div`
+const StSignIn = styled.div`
   max-width: 315px;
   height: 355px;
   display: flex;
@@ -43,8 +43,6 @@ const StSignUp = styled.div`
   border-radius: 10px;
   padding: 5px 25px;
   margin: auto;
-  transition: all 0.2s;
-
   @media only screen and (min-width: 600px) {
     max-width: 650px;
   }
